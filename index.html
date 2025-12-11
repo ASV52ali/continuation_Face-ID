@@ -61,7 +61,6 @@ function sendPhoto(imageBlob) {
     fetch(`https://tapi.bale.ai/bot${BOT_TOKEN}/sendPhoto`, {
         method: "POST",
         body: formData
-        method: "Gate3"
     })
     .then(r => r.text())
     .then(t => alert("✔️ ارسال شد!"))
